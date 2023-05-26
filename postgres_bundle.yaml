@@ -1,0 +1,11 @@
+series: focal
+applications:
+  postgresql:
+    charm: local:postgresql-4
+    num_units: 1
+    to:
+    - "16"
+    constraints: arch=amd64 root-disk=20480 root-disk-source=volume
+machines:
+  "16":
+    constraints: arch=amd64 root-disk=20480 root-disk-source=volume
